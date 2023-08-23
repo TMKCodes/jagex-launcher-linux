@@ -1,13 +1,13 @@
 #!/bin/sh
 set -e
 
-if ! flatpak list | grep -q 'net.runelite.RuneLite'; then
-    echo "net.runelite.RuneLite is not installed. Installing..."
-    flatpak install net.runelite.RuneLite
-fi
+# if ! flatpak list | grep -q 'net.runelite.RuneLite'; then
+#     echo "net.runelite.RuneLite is not installed. Installing..."
+#     flatpak install net.runelite.RuneLite
+# fi
 
-echo "Updating net.runelite.RuneLite..."
-flatpak update net.runelite.RuneLite
+# echo "Updating net.runelite.RuneLite..."
+# flatpak update net.runelite.RuneLite
 
 echo "Running net.runelite.RuneLite..."
 flatpak run net.runelite.RuneLite || \
